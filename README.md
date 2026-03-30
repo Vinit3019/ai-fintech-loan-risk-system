@@ -1,166 +1,39 @@
-# 🧠 AI Fintech Loan Risk System
+# 📊 AI Fintech Loan Risk System
 
-An end-to-end AI-powered loan risk assessment system that combines **Machine Learning (ML)** and **Large Language Models (LLMs)** to automate loan approval decisions with intelligent, human-like explanations.
-
----
-
-## 🚀 Features
-
-* ✅ Loan approval prediction using ML (Random Forest)
-* 🤖 AI-generated explanations using LLM
-* 📊 Feature importance-based ML explainability
-* 💬 Chatbot for financial guidance
-* ⚡ FastAPI backend (production-ready APIs)
-* 🎨 Streamlit UI for interactive testing
+## Overview
+End-to-end AI system for loan risk assessment using ML and LLMs (OpenAI). Designed to automate credit decisions, provide real-time risk insights, and integrate with fintech platforms.
 
 ---
 
-## 🏗️ System Architecture
-
-```
-User Input (Streamlit UI)
-        ↓
-FastAPI Backend
-        ↓
-+---------------------------+
-|  ML Model (Scikit-learn) |
-|  - Loan Prediction       |
-|  - Feature Importance    |
-+---------------------------+
-        ↓
-+---------------------------+
-|  LLM (OpenAI API)        |
-|  - Risk Explanation      |
-|  - Financial Chatbot     |
-+---------------------------+
-        ↓
-Final Response (Decision + Explanation)
-```
+## Features
+- Loan risk prediction using ML + LLM  
+- Interactive Streamlit UI and FastAPI deployment  
+- Real-time evaluation of loan eligibility  
+- End-to-end workflow from data ingestion to decision support  
 
 ---
 
-## 📡 API Endpoints
-
-### 🔹 1. Predict Loan Approval
-
-`POST /predict`
-
-```json
-{
-  "income": 50000,
-  "credit_score": 700,
-  "loan_amount": 200000
-}
-```
+## Tech Stack
+- Python, FastAPI, Streamlit  
+- OpenAI LLMs  
+- Pandas, NumPy, Scikit-learn  
 
 ---
 
-### 🔹 2. AI Explanation (LLM)
-
-`POST /explain`
-
-➡️ Generates human-like reasoning for loan decision
-
----
-
-### 🔹 3. ML Explainability
-
-`POST /ml-explain`
-
-➡️ Returns feature importance from ML model
+## AI/ML Approach
+- Built predictive ML models for risk scoring  
+- Integrated LLM for explanation and decision support  
+- Applied prompt engineering to improve LLM outputs  
+- Evaluated system on accuracy, latency, and relevance metrics  
 
 ---
 
-### 🔹 4. Combined Analysis 🔥
-
-`POST /analyze`
-
-➡️ Returns:
-
-* Loan approval decision
-* AI-generated explanation
+## Future Enhancements
+- Add RAG to incorporate external financial knowledge  
+- Optimize multi-turn LLM responses for customer advisory  
+- Deploy scalable APIs for production fintech systems  
 
 ---
 
-### 🔹 5. Chatbot
-
-`POST /chat`
-
-```json
-{
-  "messages": [
-    {
-      "role": "user",
-      "content": "Should I take a loan of 200000 with 50000 income?"
-    }
-  ]
-}
-```
-
----
-
-## 🧪 Tech Stack
-
-* Python
-* FastAPI
-* Scikit-learn
-* OpenAI API (LLM)
-* Streamlit
-* Pandas / NumPy
-
----
-
-## ⚙️ Setup Instructions
-
-```bash
-# Clone repository
-git clone https://github.com/YOUR_USERNAME/ai-fintech-loan-risk-system.git
-cd ai-fintech-loan-risk-system
-
-# Create virtual environment
-python -m venv venv
-venv\Scripts\activate   # Windows
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Create .env file
-OPENAI_API_KEY=your_api_key_here
-
-# Run FastAPI server
-uvicorn app.main:app --reload
-
-# Run Streamlit UI
-streamlit run app_ui.py
-```
-
----
-
-## 💡 Key Highlights
-
-* 🔥 Combines ML + Generative AI (real-world fintech use case)
-* ⚡ Production-ready backend using FastAPI
-* 🧠 Explainable AI system (ML + LLM explanations)
-* 💬 Conversational financial assistant
-* 📊 End-to-end deployment-ready project
-
----
-
-## 📌 Use Cases
-
-* Loan approval automation
-* Credit risk assessment
-* Fintech AI platforms
-* Banking decision support systems
-
----
-
-## 👨‍💻 Author
-
-**Vinit S B**
-
----
-
-## ⭐ Support
-
-If you like this project, give it a ⭐ on GitHub!
+## Use Case
+Supports automated lending decisions and risk evaluation for banks and fintech companies.
